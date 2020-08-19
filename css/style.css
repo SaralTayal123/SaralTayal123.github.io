@@ -70,7 +70,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.6rem; }
 
 p {
   margin-top: 0;
@@ -9049,6 +9049,7 @@ textarea.form-control {
   opacity: 0;
   visibility: hidden; }
 
+
 .bg-primary {
   background: #3e64ff !important; }
 
@@ -9061,11 +9062,11 @@ textarea.form-control {
     font-size: 24px; }
 
 .ftco-section {
-  padding: 7em 0;
-  position: relative; }
+  padding: 4em 0;
+  position: re4ative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      padding: 4em 0; } }
 
 .ftco-no-pt {
   padding-top: 0 !important; }
@@ -9077,9 +9078,9 @@ textarea.form-control {
   background: #3c312e; }
 
 .ftco-footer {
-  font-size: 16px;
+  font-size: 10px;
   background: #000000;
-  padding: 7em 0;
+  padding: 0.5em;
   z-index: 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
