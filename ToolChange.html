@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Floating Smart Mirror</title>
+  <title>Automatic 3D Printer Tool-Changer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -51,10 +51,10 @@
       <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
         <div class="col-lg-10 ftco-animate d-flex align-items-center">
           <div class="text text-center">
-            <h1 class="mb-3 bread">Floating Smart Mirror</h1>
+            <h1 class="mb-3 bread">3D Printer Tool-Changer</h1>
             <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
                     class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="blog.html">Projects <i
-                    class="ion-ios-arrow-forward"></i></a></span> <span>Floating Smart Mirror<i
+                    class="ion-ios-arrow-forward"></i></a></span> <span>Automatic 3D Printer Tool-Changer<i
                   class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
@@ -71,48 +71,42 @@
     <div class="container">
       <div class="row">
         <div class="col ftco-animate">
-          <h2 class="mb-3">Floating Smart Mirror Introduction</h2>
-          <img src="images/smartmirror.jpg" width="100%" height="auto">
-          <p></p>
-          <p >Straight out of the future, the smart mirror is simply a display behind a one way mirror. One way mirrors can reflect
-          most of light that hits the surface while still allowing some of the monitor's video behind it passes to the surface of
-          the mirror.
+          <h2 class="mb-3">Tool Changing Introduction</h2>
+          <p>Imagine a machine that sits on your desk. One click on your computer and the machine starts to 3d print a car you
+          designed. Midway through your print the printer docks the extruder and picks up a robotic arm. The robotic arm gripper
+          goes to the side of your printer and picks up a motor and accurately places them inside your half printed object. After
+          placing your motor, the printer docks the robotic arm and picks up the extruder and continues to 3d print. As finish
+          your 3d print, your printer docks the extruder and picks up a laser engraver that engraves a serial number and prints
+          some safety information like “do not swallow” you could 3d print, add motors, nuts, engrave serial number and safety.
+          Lastly, the robot docks the laser, picks up the robotic arm that it uses to pick up the part of the build plate and
+          start the whole process again.
           </p>
+          <p>
           
-          <p>
-          The mirror also has an Amazon Echo Dot hidden behind it to enable all of Alexa's vast voice control features just by
-          calling out to Alexa.
+          Now imagine, all the parts for achieving this dream could be printed by your 3d printer! Thanks to the magic of
+          automated tool-change. This machine has replaced the a small scale manufacturing line in the space of a regular 3d
+          printer. This is truly 3d printing 2.0. Tool changing has been used by large scale CNCs for years to automatically
+          change the cutting head. The reason that it hasn’t been implemented in 3d printing is twofold. 1. 3d printers are not
+          built as sturdily as huge cnc cutters that can ensure that the tool change process doesn’t introduce any accuracy or
+          reliability issues(changing tool heads). 2. The software for ‘slicing’ such tool changes automatically and reliably
+          doesn’t exist. What I have created solves the first issue of reliability since I designed my tool heads and carriages
+          with a self-centering mechanism that virtually corrects for any shift/movement that might affect the accuracy of the
+          part. My mechanism is also additionally modular to allow for any sized tools(laser cutters, low power cncs, pick and
+          place arms etc.) The second challenge still exists however. All my gcode for operating the tool change so far is
+          handwritten for every model. Companies have been building regular 3d printing slicers for many years and they still
+          exhibit a little bit of reliability issues/ 3d prints not printing optimally. Being able to give a slicer a cad model
+          and expecting it to automatically figure out when to tool change optimally and calibrate each tool introduces many more
+          degrees of complexity and therefore the likelihood of failure.
           </p>
-          <p>
-          Unlike most of the smart mirror builds that are based of the Magic Mirror OS built for the Raspberry Pi, this smart
-          mirror is built on a windows platform. There's nothing wrong with the Magic Mirror but it hasn't been built to be
-          interactive and mostly displays static information. Furthermore the raspberry pi hardware struggles to do anything more
-          than display static widgets.I wanted to be able to walk up to my smart mirror and be able to give it commands via voice.
-          browse the web and maybe watch some YouTube/Netflix.
-          </p>
-          <p>
-          One more way my build differs is that I didn't want a frame around my mirror and wanted to maintain a floating glass
-          look rather than building a frame around my smart mirror. To do this I drilled 4 holes into the mirror and attached the
-          frame to these screws in the glass.
-          </p>
-          <p>
-          So after building this very smart mirror with my raspberry Pi as the brain, I decided to upgrade it to something more
-          powerful, yet I wanted a cheap alternative especially considering how cheap the Raspberry pi is. The best way to do this
-          was to use an old unused that was lying at home unused. If you don't have any old laptops, you can very easily get a
-          second hand laptop of websites like ebay for dirt cheap.
-          </p>
-          <h2 class="mb-3 mt-5">Check out a few of the demos here:</h2>
-          <div class="col justify-content-center align-items-center">
-            <iframe width="1200" height="675" src="https://www.youtube.com/embed/gyptOm02YCo" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="1200" height="675" src="https://www.youtube.com/embed/qpqNZCaiO1Y" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="1200" height="675" src="https://www.youtube.com/embed/xOeOMQZI2GM" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <h2 class="mb-3 mt-5">Check out the full in-depth 8 page build guide by clicking the image below:</h2>
-          <a href="https://www.instructables.com/id/Floating-Smart-Magic-Mirror-From-Old-Laptop/">
-              <img src="images/smartmirrorInstructables.png" width="100%" height="auto">
+
+          <h2 class="mb-3 mt-5">Check out a Demo YouTube video here:</h2>
+          <col>
+            <iframe width="1200" height="675" src="https://www.youtube.com/embed/GY0BlAGpz3I" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </col>
+          <h2 class="mb-3 mt-5">Check out the full in-depth 10 page build guide by clicking the image below:</h2>
+          <a href="https://www.instructables.com/id/Tool-Changing-3D-Printer/">
+              <img src="images/instructablesToolChange.png" width="100%" height="auto">
           </a>
           
 
