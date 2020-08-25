@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>NewsFriend</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span>S</span>aral</a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+  <div class="hero-wrap js-fullheight">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+        <div class="col-lg-10 ftco-animate d-flex align-items-center">
+          <div class="text text-center">
+            <h1 class="mb-3 bread">NewsFriend: AI powered news aggregator</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
+                    class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="blog.html">Projects <i
+                    class="ion-ios-arrow-forward"></i></a></span> <span>NewsFriend<i
+                  class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mouse">
+      <a href="#" class="mouse-icon">
+        <div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+      </a>
+    </div>
+  </div>
+
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="col ftco-animate">
+          <h2 class="mb-3">NewsFriend Introduction</h2>
+          <p>In today's day and age, people spam-share news to all their contacts often without reading the entire news article or without veryfiying if the article is the
+            best version of the news beign shared. 
+          </p>
+          <p>
+            The NewsFriend app attempts to address that by to pre-filtering a news article before reading it. 
+            
+            To use the app, a user simply pastes a url into the app search bar, or shares the url via the phone's share button. 
+            The app will find then analyze the news article shared and find the best alternative articles for the given news. Furthermore, the 
+            app will rank your article based on readability/complexity of language, reading time/ article length, and the article's
+            sentiment. After doing this analysis on all the alternative articles, the algorithm will give your orignal article a rating and suggest
+            the better alternative articles on the same news for you to read!
+
+            Here are the techinues utilized in this project
+
+          <ul>
+            <li>Flutter for mobile app development</li>
+            <li>Heroku + FastAPI to build a custom API to process the news articles</li>
+            <li>WebScrapping to crawl google and figure out the most relavant alternative news sources for a particular news article</li>
+            <li>WebScrapping for finding relevant images, the news company's name, and the new's text to use for readability, sentiment, and reading time metrics</li>
+            <li>Sentiment and News categorizers built on Tensorflow/Keras using Word Vectors, LSTM based RNNs and other NLP techniques</li>
+          </ul>
+          As a last minute change, I didn't deploy my Sentiment and News categorization Tensorflow models due to the limited space of the Heroku install directory. Instead I used the Azure Sentiment Analysis API. However, the models and ML code is still available on the GitHub page</p>
+          <h2 class="mb-3 mt-5">Screenshots:</h2>
+            <div class="row justify-content-center mb-5">
+              <div class="col"><img src="images/newsfriendsample1.jpg" width="100%" height="auto"></div>
+              <div class="col"><img src="images/newsfriendsample2.jpg" width="100%" height="auto"></div>
+              <div class="col"><img src="images/newsfriendsample3.jpg" width="100%" height="auto"></div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col"><img src="images/newsfriendsample4.jpg" width="100%" height="auto"></div>
+              <div class="col"><img src="images/newsfriendsample5.jpg" width="100%" height="auto"></div>
+            </div>
+          <h2 class="mb-3 mt-5">Check out the full code by clicking the picture below:</h2>
+          <a href="https://github.com/SaralTayal123/NewsFriend">
+              <img src="images/git.png" width="100%" height="auto">
+          </a>
+          
+
+        </div> <!-- .col-md-8 -->
+      </div>
+    </div>
+  </section> <!-- .section -->
+
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p style="margin-bottom: 0;">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
+            <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com"
+              target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" /></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
